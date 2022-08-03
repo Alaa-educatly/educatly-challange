@@ -13,20 +13,20 @@
   <div class="input-wrapper">
 
     <div>
-      <%= form.text_field :name, placeholder: "Product name", class: "input-box" %>
+      <%= form.text_field :name, placeholder: "Product name", class: "input-box", :required => true %>
     </div>
 
     <div>
-      <%= form.number_field :price, step: :any, placeholder: "Product price", class: "input-box"%>
+      <%= form.number_field :price, step: :any, placeholder: "Product price", class: "input-box", :required => true%>
     </div>
 
     <div>
-      <%= form.text_area :description, placeholder: "Product description", class: "input-box" %>
+      <%= form.text_area :description, placeholder: "Product description", class: "input-box", :required => true %>
     </div>
 
     <div>
       <%= form.label :image %>
-      <%= form.file_field :image %>
+      <%= form.file_field :image, :required => true %>
     </div>
   </div>
 

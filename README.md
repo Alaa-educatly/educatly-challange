@@ -1,24 +1,54 @@
-# README
+<p align="center"> 
+    <img src="public/favicon.ico" width="700"/>
+</p>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Table of contents
 
-Things you may want to cover:
+- [Table of contents](#table-of-contents)
+- [Description](#description)
+- [📷 Screenshots](#-screenshots)
+  - [🔑 User Management](#-user-management)
+  - [🙍‍♂️ Products](#️-products)
+  - [🔐 Admin informations](#-admin-informations)
+- [Technologies](#technologies)
+  - [Frontend](#frontend)
+  - [Backend](#backend)
+- [Contributers](#contributers)
 
-* Ruby version
+# Description
 
-* System dependencies
+This is my implementation for educatly challange it is basicly a simple CRUD app [Deployed App](https://pure-sands-67658.herokuapp.com).
 
-* Configuration
+# 📷 Screenshots
 
-* Database creation
+## 🔑 User Management
 
-* Database initialization
+![Login](./ScreenShots/login.png)
+![SignUp](./ScreenShots/admin.png)
 
-* How to run the test suite
+## 🙍‍♂️ Products
 
-* Services (job queues, cache servers, search engines, etc.)
+![Products](./ScreenShots/products.png)
+![Product](./ScreenShots/product.png)
+![Edit](./ScreenShots/edit_product.png)
+![Delete](./ScreenShots/delete_product.png)
+![Create](./ScreenShots/new_product.png)
 
-* Deployment instructions
+## 🔐 Admin informations
 
-* ...
+![AdminInformations](./ScreenShots/admin.png)
+
+# Technologies
+
+## Frontend
+
+- Embedded ruby
+
+## Backend
+
+- Ruby on rails
+- Postgresql
+
+# Contributers
+
+- [Muhammed Alaa](https://github.com/MuhammeedAlaa)

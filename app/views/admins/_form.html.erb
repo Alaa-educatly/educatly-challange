@@ -12,13 +12,13 @@
     <% end %>
     <div class="input-wrapper">
         <div>
-        <%= form.text_field :name, placeholder: "Name", class: "input-box" %>
+        <%= form.text_field :name, placeholder: "Name", class: "input-box", :required => true %>
         </div>
         <div>
-        <%= form.text_field :email, placeholder: "Email", class: "input-box" %>
+        <%= form.text_field :email, placeholder: "Email", class: "input-box", :required => true %>
         </div>
         <div>
-        <%= form.password_field :password, placeholder: "Password", class: "input-box" %>
+        <%= form.password_field :password, placeholder: "Password", class: "input-box", :required => true %>
         </div>
         <div>
         <%= form.submit 'Create', :class => 'button button1' %>
