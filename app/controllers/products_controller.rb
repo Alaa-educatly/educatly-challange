@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: %i[ show edit update destroy ]
+  before_action :require_user
 
   # GET /products
   def index
@@ -22,13 +23,13 @@ class ProductsController < ApplicationController
   # POST /products
   def create
     @product = Product.new(product_params)
-    @product.admin = Admin.first
+    @product.admin = current_user
 
     respond_to do |format|
       if @product.save
         format.html { redirect_to product_url(@product), notice: "Product was successfully created." }
       else
-        format.html { render :new, status: :unprocessable_entity }
+        format.html { render new_product_path, status: :unprocessable_entity }
       end
     end
   end

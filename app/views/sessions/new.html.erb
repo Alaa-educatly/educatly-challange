@@ -1,0 +1,18 @@
+<div id="admin-login" class="card">
+  <h1 class="title">Login</h1>
+    <p style="color: red"><%= notice %></p>
+  <%= form_for(:session, :html => {role: "form"}, url: login_path) do |form| %>
+  <div class="input-wrapper">
+    <div>
+      <%= form.text_field :email, placeholder: "Email", class: "input-box" %>
+    </div>
+    <div>
+      <%= form.password_field :password, placeholder: "Password", class: "input-box" %>
+    </div>
+    <div>
+      <%= form.submit 'Login', :class => 'button button1' %>
+    </div>
+  </div>
+<% end %>
+</div>
+
