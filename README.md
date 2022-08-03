@@ -26,20 +26,20 @@ This is my implementation for educatly challange it is basicly a simple CRUD app
 
 ## 🔑 User Management
 
-![Login](./ScreenShots/login.png)
-![SignUp](./ScreenShots/admin.png)
+![Login](./screenshots/login.png)
+![SignUp](./screenshots/admin.png)
 
 ## 🙍‍♂️ Products
 
-![Products](./ScreenShots/products.png)
-![Product](./ScreenShots/product.png)
-![Edit](./ScreenShots/edit_product.png)
-![Delete](./ScreenShots/delete_product.png)
-![Create](./ScreenShots/new_product.png)
+![Products](./screenshots/products.png)
+![Product](./screenshots/product.png)
+![Edit](./screenshots/edit_product.png)
+![Delete](./screenshots/delete_product.png)
+![Create](./screenshots/new_product.png)
 
 ## 🔐 Admin informations
 
-![AdminInformations](./ScreenShots/admin.png)
+![AdminInformations](./screenshots/admin.png)
 
 # Requierments
 - You must have docker and docker-compose installed.
@@ -48,6 +48,7 @@ This is my implementation for educatly challange it is basicly a simple CRUD app
 ```
      ADMIN_USER=educatly
      ADMIN_PASSWORD=educatly
+     DB_HOST=postgres
 ```
 # Install instructions
 - Run `docker-compose up -d` on this directory
