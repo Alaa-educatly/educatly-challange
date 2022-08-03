@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: root
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+
+  web:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    command: bash -c "rm -f tmp/pids/server.pid && ((rake db:create && rake db:migrate && rake db:seed) || rake db:setup) && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    env_file: .env
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
