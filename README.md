@@ -12,6 +12,7 @@
   - [🔐 Admin informations](#-admin-informations)
 - [Requierments](#requierments)
   - [Example for .env](#example-for-env)
+- [Install instructions](#install-instructions)
 - [Technologies](#technologies)
   - [Frontend](#frontend)
   - [Backend](#backend)
@@ -41,12 +42,16 @@ This is my implementation for educatly challange it is basicly a simple CRUD app
 ![AdminInformations](./ScreenShots/admin.png)
 
 # Requierments
+- You must have docker and docker-compose installed.
 - you must have the .env file in the root directory.
 ## Example for .env
 ```
      ADMIN_USER=educatly
      ADMIN_PASSWORD=educatly
 ```
+# Install instructions
+- Run `docker-compose up -d` on this directory
+- Head your requests to `localhost:3000`
 # Technologies
 
 ## Frontend
