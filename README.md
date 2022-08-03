@@ -10,6 +10,8 @@
   - [🔑 User Management](#-user-management)
   - [🙍‍♂️ Products](#️-products)
   - [🔐 Admin informations](#-admin-informations)
+- [Requierments](#requierments)
+  - [Example for .env](#example-for-env)
 - [Technologies](#technologies)
   - [Frontend](#frontend)
   - [Backend](#backend)
@@ -38,6 +40,13 @@ This is my implementation for educatly challange it is basicly a simple CRUD app
 
 ![AdminInformations](./ScreenShots/admin.png)
 
+# Requierments
+- you must have the .env file in the root directory.
+## Example for .env
+```
+     ADMIN_USER=educatly
+     ADMIN_PASSWORD=educatly
+```
 # Technologies
 
 ## Frontend
