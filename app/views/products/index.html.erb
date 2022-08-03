@@ -1,0 +1,41 @@
+<p style="color: green"><%= notice %></p>
+
+
+<div id="products" class="card">
+  <h1 class="title">Products</h1>
+  <div class="row">
+    <div class="column">
+      <table class="table"> 
+        <div>
+          <%= link_to "New product", new_product_path, class: "button button2" %>
+        </div>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Description</th>
+          <th style='text-align: center;'>Image</th>
+          <th>Created at</th>
+          <th>Updated at</th>
+          <th>Creator</th>
+          <th>Actions</th>
+        </tr>
+        <% @products.each do |product| %>
+          <tr>
+            <td><%= product.name %></td>
+            <td><%= product.price %></td>
+            <td><%= product.description.truncate(30) %></td>
+            <td><%= image_tag(product.image) %></td>
+            <td><%= product.created_at %></td>
+            <td><%= product.updated_at %></td>
+            <td><%= link_to product.admin.name, admin_path(product.admin), class: 'admin' %></td>
+            <td>
+              <%= link_to "Show", product, class: "button button2" %>
+              <%= link_to "Edit", edit_product_path(product), class: "button button1" %>
+              <%= link_to "Destroy", product, data: { turbo_confirm: "Are you sure you want to delete this product ?", "turbo-method": :delete }, class: "button button3"%>
+            </td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+</div>
