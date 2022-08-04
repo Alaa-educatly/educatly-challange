@@ -27,7 +27,7 @@ This is my implementation for educatly challange it is basicly a simple CRUD app
 ## 🔑 User Management
 
 ![Login](./screenshots/login.png)
-![SignUp](./screenshots/admin.png)
+![SignUp](./screenshots/new_admin.png)
 
 ## 🙍‍♂️ Products
 
