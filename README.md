@@ -50,6 +50,7 @@ This is my implementation for educatly challange it is basicly a simple CRUD app
      ADMIN_PASSWORD=educatly
      DB_HOST=postgres
 ```
+- The `ADMIN_USER` and `ADMIN_PASSWORD` corresponds to the http basic auth
 # Install instructions
 - Run `docker-compose up -d` on this directory
 - Head your requests to `localhost:3000`
